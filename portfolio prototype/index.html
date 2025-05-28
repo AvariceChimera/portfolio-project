@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website!</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- This is internal CSS
+    <style>
+        p {
+            /* This is where we write our "rules" */
+            color: white;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body {
+            background-color: #472c6b;
+        }
+    </style> -->
+
+</head>
+
+<!-- The body tag below is using inline css
+<body style="background-color: #472c6b; color: white;">
+-->
+<body>
+    <nav class="navbar">
+        <button class="nav-button" onclick="window.location.href='skills.html'">Skills</button>
+        <button class="nav-button" onclick="window.location.href= 'PortPiece1.html'">Jewel Thief</button>
+        <button class="nav-button" onclick="window.location.href= 'PortPiece2.html'">Mass Recall</button>
+        <button class="nav-button" onclick="window.location.href= 'PortPiece3.html'">NL2D</button>
+    </nav>
+
+    <h1 style="color: white; font-family:'Comic Sans MS', Times, serif; font-size: 300%;">
+        "The only way to do great work is to love what you do" -Steve Jobs
+    </h1>
+
+    <p>Hey, how you doing. Don't mind the mess i just haven't had time to clean up<br>
+        i used comic sans because it's dyslexia friendly. Never hurts to be accessible<br>
+        to see my work click on the buttons in the nav bar or the characters on the side<br>
+        they're even at the bottom of this page if you don't want to scroll all the way back up.
+    </p>
+    <img src = "./images/NL2D_Player.png" class="open-modal" data-modal="modal-overlay-3">
+    <img src = "./images/assignment_player.png" class="open-modal" data-modal="modal-overlay-2">
+    <img src = "./images/RichardK.png" class="open-modal" data-modal="modal-overlay-1">
+        <!-- Modals -->
+    <div id="modal-overlay-3" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <!--Close Button-->
+            <button id="modal-close-3" class="close-modal" data-modal="modal-overlay-3">&times;</button>
+            <!--Headings/Title-->
+            <h1>Project Title</h1>
+            <!--Images/Video-->
+            <img src="./images/NL2D_Player.png" alt = "Project 3 Image" style="max-width: 100%; border-radius: 8px;" />
+            <!--text paragraphs-->
+            <a href = "PortPiece3.html"> click here for in depth detail</a>
+            <p>a shooter that challenges you to get a high score and survive as long as you can</p>
+        </div>
+    </div>
+
+        <div id="modal-overlay-2" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <!--Close Button-->
+            <button id="modal-close-2" class="close-modal" data-modal="modal-overlay-2">&times;</button>
+            <!--Headings/Title-->
+            <h1>Project Title</h1>
+            <!--Images/Video-->
+            <img src="./images/assignment_player.png" alt = "Project 2 Image" style="max-width: 100%; border-radius: 8px;" />
+            <!--text paragraphs-->
+            <a href = "PortPiece2.html"> click here for in depth detail</a>
+            <p>a short shooter defense game where you shoot robots and use the scrap metal to upgrade your tower between waves</p>
+        </div>
+    </div>
+
+        <div id="modal-overlay-1" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <!--Close Button-->
+            <button id="modal-close-1" class="close-modal" data-modal="modal-overlay-1">&times;</button>
+            <!--Headings/Title-->
+            <h1>Project Title</h1>
+            <!--Images/Video-->
+            <img src="./images/RichardK.png" alt = "Project 1 Image" style="max-width: 100%; border-radius: 8px;" />
+            <!--text paragraphs-->
+            <a href = "PortPiece1.html"> click here for in depth detail</a>
+            <p>a puzzle game that makes you choose bwtween a high score or a hefty time bonus</p>
+        </div>
+    </div>
+
+    <div id="aboutMe"> 
+        <h2> About Me</h2>
+    <!-- These are entity numbers                                           This is a non-breaking space-->
+        <p> My name is Joshua Crabb and I am a Game Developer.<br>
+            i enjoy working with verious aspects of games but try to focus my efforts on making them "feel good"<br>
+            both visually and in terms of gameplay so i put my energy into design. from tweaking movement speeds or<br>
+            making changes to assets (which in the projects below i mostly made myself) so they pop out more for players to see<br>
+            i started coding as a sort of touch & go hobby only really learning bits and pieces. it wasn't until joning triOS that i really<br>
+            sunk my teeth into languages and projects. I take a lot of pride in my work and typically need to be pulled<br>
+            away lest i lose track of time and focus too long on one problem or aspect i feel that my main drive stems from that<br>
+            need to polish, i want games to be as good as possible not just for players but for devs later down the line<br>
+            the more polished a game is the less they'll need to fix it later. But with AAA gaming being what it is that level of dedication<br>
+            is exceedingly rare unless you look at indie teams or solo devs, but that's enough waxing poetic! i am a passionate<br>
+            individual and have a decerning eye trained to spot trends and the mind to work around them, if you want someone who<br>
+            works well in a team look no further. now let's make a game worth playing
+        </p>
+    </div>
+
+<!-- This is us giving this div 2 different classes by using spaces-->
+    <div class="Connect cool">
+        <h2 style="font-size: 10vw;"> Connect with me! </h2>
+
+        <p>
+        you can find me online at these links, feel free to contact me however you see fit.
+        <ul>
+            <li><a href="https://www.linkedin.com/in/joshua-crabb-689373331/" style="text-align: centre;"> LinkedIn </a></li>
+            <li><a href="https://avaricechimera.itch.io"> Itch.io profile </a></li>
+            <li>you can contact me on discord @thosetwopeople</li>
+        </ul>
+    </p>
+    </div>
+
+
+    <h2 id="somethingDifferent"> Portfolio Images</h2>
+
+    <a href="PortPiece3.html">
+    <img src="./images/NL2D_Player.png" style="width:10%; height:10%">    
+    </a>
+    <a href="PortPiece2.html">
+    <img src="./images/assignment_player.png" style="width:10%; height:10%">
+    </a>
+    <a href="PortPiece1.html">
+    <img src="./images/RichardK.png" style="width:10%; height:10%">
+    </a>
+<script src = "scripts.js"></script>
+</body>
+
+
+
+</html>
